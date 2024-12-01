@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+}
+
+body{
+    background: linear-gradient(35deg, Red, 50%, Cyan);
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to bottom, #003, #005);
+    position: fixed;
+    width: 100%; /* Ensure the header spans the full width */
+    top: 0; /* Stick to the top of the page */
+    height: 80px; /* Set an explicit height */
+    z-index: 10; /* Keep it above other content */
+}
+
+/* Logo styling */
+.logo img {
+    max-height: 60px; /* Adjust logo size */
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    gap: 20px; /* Space between navigation links */
+    position: relative;
+}
+
+/* Navigation links styling */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* Adjust text size */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff0; /* Optional hover effect */
+}
+
+section{
+    padding: 10rem 9% 2rem;
+    height: 200vh;
+    width:100%;
+
+}
+
+.text-content span{
+    font-size: 32px;
+    color: rgb(220, 230, 245);
+}
+
+.text-content h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 550;
+    color: white ;
+    border-color: #0f0f0f;
+}
+
+
+.imageSect1 img {
+    height: 350px;
+    display: block; /* Ensure the image behaves as a block-level element */
+    margin-left: auto; /* Push the image to the right */
+    margin-right: 5px; /* Add some spacing from the right edge */
+    position: relative;
+    transform: translate(40%, -50%); /* Adjust its placement relative to its container */
+    animation: Popup 1s ease forwards;
+}
+@keyframes Popup{
+    0%{
+        scale: 0
+
+        
+    }
+    100%{
+        scale: 1
+    }
+
+}
+
+
+.imageSect1 {
+    display: flex; /* Enables horizontal alignment */
+    justify-content: right; /* Centers the characters in the container */
+    align-items: right; /* Ensures vertical alignment is consistent */
+    gap: 10px; /* Adds space between the characters */
+
+}
+
+
+
+.imageSect1 img {
+    height: 450px;
+    margin: 0; /* Resets margins to avoid unwanted spacing */
+    position: relative; /* Ensures proper alignment */
+    
+} 
+
+
+.heading{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.content img{
+    height: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fonts {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space out the items */
+    text-align: center; /* Center text within each heading */
+    margin-bottom: 1rem; /* Add spacing below the fonts section */
+}
+
+.fonts h2,
+.fonts h3,
+.fonts h4 {
+    font-size: 25px;
+    margin: 0; /* Remove default margin */
+}
+
+.Texts {
+    display: flex; /* Align text blocks horizontally */
+    justify-content: space-between; /* Space them out evenly */
+    text-align: center; /* Align text in each block */
+    gap: 20px; /* Optional spacing between the blocks */
+}
+
+.Texts h2,
+.Texts h3,
+.Texts h4 {
+    font-size: 15px;
+    margin: 0; /* Remove default margin */
+    max-width: 30%; /* Prevent the text from stretching too wide */
+    line-height: 1.5; /* Add spacing between lines */
+}
+.Stream {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center;
+    padding-top: 5rem; /* Optional padding to adjust vertical position */
+    color: white;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between; /* Space images evenly */
+    width: 60%; /* Adjust the width to your preference */
+    margin-top: 2rem; /* Optional: space between the text and the images */
+}
+
+.images img {
+    width: 45%; /* Control image width */
+    max-height: 250px; /* Optional: adjust max height */
+    object-fit: contain; /* Ensures images retain their aspect ratio */
+}
+
+.Bottomtext {
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 1rem; /* Adds space above the text (optional) */
+    width: 80%; /* Control the width if necessary */
+    height: auto; /* Automatically adjusts height based on content */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.2); /* Enlarged size */
+    }
+}
+
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up slightly */
+    }
+}
+
+/* Apply floating animation to all images */
+.content img {
+    animation: floating 2s ease-in-out infinite; /* Continuous floating effect */
+}
+
+
+
+.images img:hover {
+    animation: heartbeat  0.6s ease-in-out infinite; /* Heartbeat animation */
+}
