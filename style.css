@@ -223,3 +223,116 @@ section{
 .images img:hover {
     animation: heartbeat  0.6s ease-in-out infinite; /* Heartbeat animation */
 }
+
+/* General styles already included above */
+
+/* Responsive styles for phone view */
+@media (max-width: 768px) {
+    /* Body adjustments */
+    body {
+        font-size: 14px; /* Reduce font size for readability */
+    }
+
+    /* Header styles for phone view */
+    .header {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height for stacked elements */
+        padding: 10px;
+    }
+
+    .logo img {
+        max-height: 40px; /* Reduce logo size */
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navigation links */
+        gap: 10px; /* Reduce spacing between links */
+    }
+
+    .navbar a {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    /* Section adjustments */
+    section {
+        padding: 6rem 5% 2rem; /* Adjust padding */
+    }
+
+    .text-content h2 {
+        font-size: 36px; /* Smaller font size for headings */
+    }
+
+    .text-content span {
+        font-size: 24px;
+    }
+
+    /* Image adjustments */
+    .imageSect1 img {
+        height: 250px; /* Reduce image size */
+        transform: translate(0, 0); /* Reset translation */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .imageSect1 {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center align the images */
+        gap: 20px; /* Add spacing between images */
+    }
+
+    /* Content section adjustments */
+    .content {
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    .content img {
+        height: 150px; /* Reduce image size */
+    }
+
+    /* Fonts adjustments */
+    .fonts {
+        flex-direction: column; /* Stack text sections vertically */
+        gap: 15px; /* Add spacing between sections */
+    }
+
+    .fonts h2,
+    .fonts h3,
+    .fonts h4 {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .Texts {
+        flex-direction: column; /* Stack text blocks */
+        gap: 15px; /* Add spacing */
+    }
+
+    .Texts h2,
+    .Texts h3,
+    .Texts h4 {
+        font-size: 14px; /* Adjust font size */
+        max-width: 100%; /* Allow full width */
+    }
+
+    /* Stream adjustments */
+    .Stream {
+        padding-top: 2rem; /* Adjust padding */
+    }
+
+    .images {
+        flex-direction: column; /* Stack images */
+        gap: 20px; /* Add spacing */
+        width: 100%; /* Full width */
+    }
+
+    .images img {
+        width: 80%; /* Adjust image width */
+        margin: 0 auto; /* Center align images */
+    }
+
+    /* Bottom text adjustments */
+    .Bottomtext {
+        width: 90%; /* Increase text width */
+        margin: 1rem auto; /* Center align text */
+    }
+}
